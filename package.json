@@ -1,0 +1,32 @@
+{
+  "name": "angry-tweets",
+  "version": "1.0.0",
+  "description": "Analyze the aggression on twitter",
+  "main": "main.js",
+  "scripts": {
+    "compile": "browserify -t [ babelify --presets [ react es2015 ] ] ./src/js/app.js -o ./bundle.js",
+    "start": "electron ."
+  },
+  "repository": "https://github.com/achudnovskiy/AngryTweets",
+  "keywords": ["twitter", "watson", "electron"],
+  "author": "Andrey Chudnovskiy",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "electron": "~1.6.2",
+    "react-input-autosize": "1.1.0",
+    "react-select": "^1.0.0-rc.3",
+    "twitter": "^1.7.0",
+    "watson-developer-cloud": "^2.31.0"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-autocomplete": "^1.5.1",
+    "react-dom": "^15.5.4",
+    "react-loading": "0.0.9"
+  }
+}

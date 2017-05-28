@@ -1,0 +1,114 @@
+@font-face {
+    font-family: FontRegular;
+    src: url("SourceSansPro-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: FontLight;
+    src: url("SourceSansPro-ExtraLight.otf") format("opentype")
+}
+
+body{
+    font-family: FontLight;
+    background-color: #eeeeee;
+}
+
+h1 {
+    margin-left:40px;
+    color:#fc6661;
+}
+
+.text-faint{
+    color:#afafaf;
+}
+
+.searchBox {
+    margin:10px 40px;
+    opacity:1;
+    background-color:white;
+    box-shadow: 0 5px 5px lightgrey;
+    border-radius: 5px;
+}
+
+.searchBox input {
+    font-family: FontRegular;
+    font-size: 24px;
+    width:100%;
+}
+
+.searchBox-hidden {
+    /*transition-property: opacity;*/
+    /*margin-top:10px;*/
+    /*transition: transform 10s;*/
+    /*opacity:0;*/
+}
+
+.searchBox-option {
+    width:100%;
+    background-color: white;
+    font-family: FontRegular;
+    font-size: 14px;
+    margin:5px 0;
+    display: inline-block;
+    border-bottom: 1px #afafaf;
+}
+.searchBox-option input {
+    width: 100%;
+    height: 100%;
+}
+
+.searchBox-option-id {
+  margin:0;
+}
+.searchBox-option-name {
+  margin:0;
+}
+.searchBox-option-wrapper{
+  padding:5px;
+}
+
+.searchBox-option-image {
+  margin:0 5px;
+  float:left;
+}
+
+.spinner {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+}
+
+.searchResult {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /*margin:10px 40px;*/
+    opacity:1;
+    background-color:white;
+    box-shadow: 0 5px 5px lightgrey;
+    border-radius: 5px;
+}
+
+.searchResult svg {
+    padding: 25px;
+}
+
+.searchResult path {
+    fill:none;
+    stroke-width:20;
+    stroke:#fc6661;
+}
+
+.searchResult text {
+    font-size: 24px;
+}
+
+/*ÏÏ
+.Select-input {
+
+}
+.Select-placeholder input {
+    /*height: 80px;*/
+    /*min-width: 400px;
+}
+*/
