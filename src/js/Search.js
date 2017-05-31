@@ -21,37 +21,20 @@ class Search extends Component {
         );
     }
     render() {
-        console.log(this.props.isHidden);
-        const classNames = ['searchBox'];
-        if (this.props.isHidden) { classNames.push('searchBox-hidden'); }
-
         return (
-            <div>
-                <h1>Hate Speech analyzer</h1>
-                <AsyncComponent
-                    className={classNames.join(' ')}
-                    valueKey="id"
+            <div className="search">
+                <p className="header">Search for the user</p>
+                <Select.Async
+                    className="searchBox"
+                    valueKey="screen_name"
                     labelKey="screen_name"
                     value={this.props.value}
                     onChange={this.props.onChange}
-                    selectValue={this.props.handleSelect}
                     loadOptions={this.props.getValues}
-                    clearRenderer={function () { }}
-                    // searchable={!this.props.isHidden}
-                    valueRenderer={function () { }}
                     optionRenderer={this.renderOption}
-                    addLabelText=""
-                    clearAllText=""
-                    clearValueText=""
-                    noResultsText=""
-                    searchPromptText=""
-                    loadingPlaceholder=""
-                    placeholder=""
-                    searchingText=""
                     multi={false}
                     backspaceRemoves={false}
                     autosize={false}
-                    onCloseResetsInput={false}
                     openOnFocus={true}
                 />
             </div>
