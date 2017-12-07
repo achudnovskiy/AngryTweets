@@ -67,6 +67,11 @@ class AppContainer extends Component {
 
     search(value) {
         if (!value || value === '') {
+            this.setState({
+                displayScore: 0,
+                isLoading: false,
+                showResults: false
+            });
             return Promise.resolve({ options: [] });
         }
 
@@ -142,7 +147,6 @@ class AppContainer extends Component {
                     showResults={this.state.showResults} 
                     score={this.state.displayScore}
                     isLoading={this.state.isLoading} />
-                
             </div>
         );
     }
